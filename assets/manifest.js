@@ -1,0 +1,9 @@
+// Replaceable asset manifest. Swap image files without changing game logic.
+export const HERO_ASSETS = {
+  kozen: { idle:'./assets/characters/kozen/idle.png', attack:'./assets/characters/kozen/attack.png', hurt:'./assets/characters/kozen/hurt.png', down:'./assets/characters/kozen/down.png', victory:'./assets/characters/kozen/victory.png' },
+  hakurei: { idle:'./assets/characters/hakurei/idle.png', attack:'./assets/characters/hakurei/attack.png', hurt:'./assets/characters/hakurei/hurt.png', down:'./assets/characters/hakurei/down.png', victory:'./assets/characters/hakurei/victory.png' },
+  kokurei: { idle:'./assets/characters/kokurei/idle.png', attack:'./assets/characters/kokurei/attack.png', hurt:'./assets/characters/kokurei/hurt.png', down:'./assets/characters/kokurei/down.png', victory:'./assets/characters/kokurei/victory.png' },
+};
+export const ENEMY_ASSETS = Object.fromEntries(['moss_slime','horn_rabbit','root_wisp','mud_crab','reed_stalker','bog_lurker','ash_hound','cinder_imp','iron_beetle','frost_owl','ice_moth','snow_golem','dune_scorpion','glass_serpent','sun_vulture','ruin_knight','arcane_eye','bone_scribe','storm_drake','thunder_sprite','cloud_raider','abyss_jelly','coral_giant','tide_siren','void_mantle','star_sentinel','prism_beast','white_wyrm','black_wyrm','rainbow_herald'].map(id=>[id,`./assets/art/enemies/${id}.png`]));
+export const REGION_ASSETS = Object.fromEntries(['verdant_steppe','whispering_wood','ashfall_ridge','frostveil_pass','sunscar_dunes','sunken_archive','stormcrown_spire','prism_sanctum'].map(id=>[id,`./assets/art/regions/${id}.png`]));
+export const ICON_ASSETS = Object.fromEntries(['onehand_sword','twohand_sword','dagger','axe','spear','bow','staff','tome','shield','light_armor','heavy_armor','robe','helm','hat','ring','necklace','bracelet','charm','relic'].map(id=>[id,`./assets/art/icons/${id}.png`]));
